@@ -66,3 +66,31 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 40px !important;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: #808080;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the default eye icon in Edge/IE */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
